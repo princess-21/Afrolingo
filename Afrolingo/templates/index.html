@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI for African Languages</title>
+    <link rel="stylesheet" href="/static/index.css">
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <!-- Logo -->
+    <img src="/static/20826469.jpg" alt="Generative AI Logo" style="display: block; margin: 0 auto; width: 200px; height: auto;">
+
+    <div class="dropdown-container">
+        <!-- Source Language Dropdown -->
+        <label for="source-language">Source Language:</label>
+        <select id="source-language">
+            <option value="yoruba">Yoruba</option>
+            <option value="swahili">Swahili</option>
+            <option value="zulu">Zulu</option>
+            <option value="igbo">Igbo</option>
+            <option value="pidgin">Pidgin</option>
+            <option value="english">English</option>
+        </select>
+    
+        <!-- Target Language Dropdown -->
+        <label for="target-language">Target Language:</label>
+        <select id="target-language">
+            <option value="yoruba">Yoruba</option>
+            <option value="swahili">Swahili</option>
+            <option value="zulu">Zulu</option>
+            <option value="igbo">Igbo</option>
+            <option value="pidgin">Pidgin</option>
+            <option value="english">English</option>
+        </select>
+    </div>
+
+    <!-- Input Text -->
+    <div class="input-container">
+        <textarea id="user-input" rows="4" placeholder="Enter text in an African language..."></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <button id="submit-button">Submit</button>
+
+    <!-- Output Section -->
+    <div id="output" style="margin-top: 20px; font-weight: bold;"></div>
+</body>
+</html>

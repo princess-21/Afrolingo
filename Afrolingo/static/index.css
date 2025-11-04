@@ -1,0 +1,118 @@
+/* Container for the whole layout */
+.container {
+    width: 300px;
+    border: 5px solid black;
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+
+
+/* Dropdown container positioned near the output */
+.dropdown-container {
+    position: relative; /* Keeps dropdowns relative to the parent */
+    display: flex; /* Flexbox for side-by-side layout */
+    flex-direction: row; /* Ensures horizontal alignment */
+    gap: 20px; /* Adds space between dropdowns */
+    align-items: center; /* Vertically aligns dropdowns */
+    justify-content: flex-start; /* Aligns items to the left */
+    width: 100%; /* Makes the container span full width if needed */
+}
+
+/* Small pill-shaped dropdowns */
+select {
+    width: auto; /* Compact dropdowns */
+    padding: 5px 10px; /* Smaller padding for pill shape */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded pill shape */
+    background-color: #f9f9f9; /* Light background */
+    cursor: pointer;
+}
+
+/* Optional: Separator for clarity */
+.separator {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+/* Input box styling */
+#user-input {
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    border-style: dotted;
+    box-sizing: border-box;
+}
+
+/* Button inside the input box */
+#generate-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+}
+
+/* Label styling for dropdowns */
+label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+
+select, textarea {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
